@@ -42,4 +42,4 @@ Additionally, this visualization also includes other simple fractals based on cu
 
 ## Usage
 
-Open `index.html` in any WebGL-supported browser or check it out [online](https://dominikscholz.github.io/fractals/).
+Open `index.html` in any WebGL-supported browser or check it out [online](https://dominikscholz.github.io/IFS-fractals/).
