@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fractals Dominik</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="overlay">
+  <div id="overlay-top">
+    <div id="branding">3D IFS Fractals by Dominik Scholz</div>
+    <div id="right-panel">
+      <select id="fractal-choice">
+      </select>
+      <table id="info-panel">
+        <tr><td>Hausdorff Dimension: </td><td id="hausdorff-display"></td></tr>
+        <tr><td>Iteration Depth: </td><td id="iteration-display"></td></tr>
+        <tr><td>Instances: </td><td id="count-display"></td></tr>
+        <tr><td><div id="speed-description">Speed: </div><div id="speed-display">1x</div></td><td><input type="range" min="-3" max="3" value="0" class="slider" id="speedinput"></input></td></tr>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="overlay-bottom">
+    <button id="pause-button"><span class="icon pause-icon paused"></span></button>
+    <button id="stop-button"><span class="icon stop-icon"></span></button>
+    <button id="direction-button"><div class="icon direction-icon"><div class="arrow"></div></div></button>
+    <div id="timeline">
+      <input type="range" min="0" max="1000" value="0" class="slider" id="timeinput"></input>
+    </div>
+  </div>
+</div>
+<div id="canvas"></div>
+
+<!-- three js dependencies -->
+<script src="libs/three.min.js"></script>
+<script src="libs/BufferGeometryUtils.js"></script>
+<script src="libs/OrbitControls.js"></script>
+
+<!-- general code -->
+<script src="vertexShader.glsl.js"></script>
+<script src="fragmentShader.glsl.js"></script>
+<script src="main.js"></script>
+<script src="fractal.js"></script>
+
+<!-- specific fractals -->
+<script src="fractals/sierpinski.js"></script>
+<script src="fractals/fractal_3x3x3_cube.js"></script>
+<script src="fractals/cantordust.js"></script>
+<script src="fractals/menger-cantor.js"></script>
+<script src="fractals/mengerinverse.js"></script>
+<script src="fractals/mengersponge.js"></script>
+
+</body>
+</html>
