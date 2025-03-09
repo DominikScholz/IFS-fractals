@@ -4,13 +4,13 @@ A visualization of different [iterated function systems (IFS)](https://en.wikipe
 
 This was my submission for the university lecture [186.186 Fractals](https://www.cg.tuwien.ac.at/courses/2019W/Fraktale/UE)
 
-<table>
-<tr>
-<td><img src="./assets/pic1.png" height="200"></td>
-<td><img src="./assets/pic2.png" height="200"></td>
-<td><img src="./assets/pic3.png" height="200"></td>
-</tr>
-</table>
+<div style="display: flex; justify-content: space-between; width: 100%; ">
+  <img src="./assets/pic1.png" style="height: 256px;">
+  &nbsp;&nbsp;
+  <img src="./assets/pic2.png" style="height: 256px;">
+  &nbsp;&nbsp;
+  <img src="./assets/pic3.png" style="height: 256px;">
+</div>
 
 ## Code Description
 
@@ -42,4 +42,4 @@ Additionally, this visualization also includes other simple fractals based on cu
 
 ## Usage
 
-Open `index.html` in any WebGL-supported browser.
+Open `index.html` in any WebGL-supported browser or check it out [online](https://dominikscholz.github.io/fractals/).
